@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1 class="title">
+  Restaurant
+ </h1>
+ </header>
+ <main>
+ <div class="restaurant-form">
+ <div class="res-order">
+ <h4> Name:</h4><br>
+    <input type="text" id="name"><br><br>
+   <h4 class="menuheading"> Menu: </h4><br>
+    <div class="menu">
+   <div class="burger" id="burger">
+     <div class="imgburger">
+       <img src="burger.svg" class="burgerimg">
+    </div> 
+<div class="burger-info">
+<br>Beef Burger
+<br><br>
+R90
+</div>
+</div>
+<div class="steak">
+<div class="imgsteak">
+    <img src="steak.svg" class="steakimg">
+   </div>
+   <div class="steakinfo">
+    Steak and chips
+    <br><br>
+    R115
+   </div>
+</div>
+<div class="pizza">
+<div class="imgpizza">
+<img src="pizza.svg" class="pizzaimg">
+</div>
+<div class="pizza-info">
+    BBQ Chicken pizza
+    <br><br>
+    R140
+</div>
+</div>
+    </div>
+    <!-- <select>
+        <option value="select">--Select--</option>
+   <option value="Beef Burger">Beef Burger (R90)</option>
+   <option value="Steak and chips">Steak and chips (R115)</option>
+   <option value="BBQ Chicken Pizza">BBQ Chicken Pizza (R140)</option>
+    </select> -->
+<br><br>
+<h4>
+Takeaway:<br>
+</h4>
+<select id="takeaway-select">
+<option value="Select">-------Select------</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<br><br>
+    <button id="btn" onclick="add()" type="button">Place Order</button>
+    </div>
+    </div>
+    <div id="restaurant-display">
+    </div>
+
+    <script src="home.js"></script>
+    </main>
+</body>
+</html>
