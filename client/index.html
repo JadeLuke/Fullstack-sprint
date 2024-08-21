@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="readAll()">
 <header>
   <h1 class="title">
   Restaurant
@@ -15,8 +15,33 @@
  <main>
  <div class="restaurant-form">
  <div class="res-order">
- <h4> Name:</h4><br>
-    <input type="text" id="name"><br><br>
+    <form id="createForm">
+ <h4> Full Name:</h4><br>
+    <input type="text" id="name" placeholder="Enter your full name"><br><br>  Takeaway:<br>
+</h4>
+<select id="takeaway-select">
+<option value="Select">-------Select------</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<button id="addBt" type="button" onclick="addBurger()">Create</button>
+</form>
+<form id="updateForm">
+    <input type="text" hidden id="update_id">
+    <h4> Full Name:</h4><br>
+    <input type="text" id="newName" placeholder="Enter your full name"><br><br>  Takeaway:<br>
+</h4>
+<select id="newTakeaway-select">
+<option value="Select">-------Select------</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<button type="button" onclick="update()"> Update </button>
+
+</form>
+<button id="addBtn" onclick="createForm()">Add</button>
+
+<br><br>
    <h4 class="menuheading"> Menu: </h4><br>
     <div class="menu">
    <div class="burger" id="burger">
@@ -27,6 +52,8 @@
 <br>Beef Burger
 <br><br>
 R90
+<button id="btn" onclick="addBurger()" type="button" id="burgerBtn">Place Order</button>
+
 </div>
 </div>
 <div class="steak">
@@ -36,7 +63,8 @@ R90
    <div class="steakinfo">
     Steak and chips
     <br><br>
-    R115
+    R115<br>
+    <button onclick="addSteak()" type="button" id="steakBtn">Place Order</button>
    </div>
 </div>
 <div class="pizza">
@@ -47,6 +75,8 @@ R90
     BBQ Chicken pizza
     <br><br>
     R140
+    <button onclick="addPizza()" type="button" id="pizzaBtn">Place Order</button>
+
 </div>
 </div>
     </div>
@@ -58,15 +88,15 @@ R90
     </select> -->
 <br><br>
 <h4>
-Takeaway:<br>
+<!-- Takeaway:<br>
 </h4>
 <select id="takeaway-select">
 <option value="Select">-------Select------</option>
 <option value="Yes">Yes</option>
 <option value="No">No</option>
 </select>
-<br><br>
-    <button id="btn" onclick="add()" type="button">Place Order</button>
+<br><br> -->
+    <!-- <button id="btn" onclick="addBurger()" type="button">Place Order</button> -->
     </div>
     </div>
     <div id="restaurant-display">

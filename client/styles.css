@@ -24,11 +24,14 @@ header {
  }
 #btn{
     /* background-color:  #bb0a21; */
-    background-color: #bb0a22d1;
+    /* background-color: #bb0a22d1; */
+    background-color: #f49faa8f;
     border: none;
     border-radius: 20px;
-    color: whitesmoke;
+    /* color: whitesmoke; */
+    /* color: #e6122ec4; */
     /* font-size: 20px; */
+    color: #c0051ec4;
     width: 120px;
     height: 25px;
     margin-top: 20px;
@@ -55,7 +58,7 @@ header {
     border-radius: 20px;
     height: 170px;
     width: 140px;
-    color: #e6122ec4;
+    color: #c0051ec4;
 }
 .burgerimg, .steakimg, .pizzaimg{
     height: 50px;
@@ -183,6 +186,7 @@ h4{
     margin-left: -48px;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
   .Meals{
 
@@ -197,4 +201,35 @@ h4{
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+  }
+  #steakBtn{
+    /* background-color: #bb0a22d1; */
+    background-color: rgba(246, 246, 32, 0.718);
+    border: none;
+    border-radius: 20px;
+    /* color: whitesmoke; */
+    color: rgb(118, 118, 14);
+    /* font-size: 20px; */
+    width: 120px;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    cursor: pointer;
+  }
+
+  #pizzaBtn{
+    background-color: rgba(55, 172, 55, 0.605);
+    border: none;
+    border-radius: 20px;
+    /* color: whitesmoke; */
+    color: rgb(8, 73, 8);
+    /* font-size: 20px; */
+    width: 120px;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    cursor: pointer;
+  }
+  #createForm, #updateForm{
+    display: none;
   }
